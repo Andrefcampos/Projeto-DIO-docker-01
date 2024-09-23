@@ -1,0 +1,9 @@
+version '3.8'
+
+services:
+  web:
+    images: httpd:latest
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    ports:
+      - "5000:80"
